@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 # ----- TinyLlama via Ollama settings (Stage 2) -----
-OLLAMA_URL = os.getenv("OLLAMA_URL", "http://127.0.0.1:11434")
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://172.172.8.45:11434")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "tinyllama")
 
 @app.get("/")
